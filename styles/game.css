@@ -1,0 +1,47 @@
+
+body{
+    background-color: #2E3047;
+    text-align: center;
+}
+.page-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #3BBA9C;
+}
+
+.start-container{
+    height: 100%;
+}
+
+.start-tile{
+    display: inline-block;
+    margin: 10rem 50px;
+    padding: 20px;
+    border: 3px solid #707793;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    transition: .3s;
+}
+
+.start-tile:hover{
+    background-color: #70779388;
+    scale: 1.10;
+    cursor: pointer;
+}
+
+.tile-image{
+    width:100px;
+    height: 100px;
+    fill: white;
+    color: white;
+    margin-top: 2rem;
+}
+
+.tile-header{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}

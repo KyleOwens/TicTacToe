@@ -45,3 +45,67 @@ body{
     font-weight: bold;
     font-size: 2rem;
 }
+
+#title-screen{
+    display: none;
+}
+
+.game-board{
+    width:100%;
+    margin-top: 5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.turn-indicator{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.game-grid{
+    table-layout: fixed;
+    width: 50%;
+    margin: 5rem auto;
+}
+
+.game-grid tr{
+    height: 150px;
+    text-align:center;
+    line-height: 150px;
+}
+
+.game-grid td:nth-child(2){
+    border-left: 3px solid  #707793;
+    border-right: 3px solid  #707793;
+}
+
+.game-grid td{
+    color: #3BBA9C;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.second-row{
+    border-bottom: 3px solid  #707793;
+    border-top: 3px solid #707793;
+}
+
+.game-button-container button{
+    border-radius: 50px;
+    border: 2px solid  #707793;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #2E3047;
+    font-size: 1rem;
+    transition: .3s;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.game-button-container button:hover{
+    background-color: #70779388;
+    cursor: pointer;
+}

@@ -6,7 +6,8 @@
 </head>
 <body>
     <h1 class='page-title'>Tic-Tac-Toe</h1>
-    <div id='title-screen'>
+    <div class='full-wrapper'></div>
+    <div id='title-screen' class=''>
         <div class='start-container'>
             <div id='pvc' class='start-tile'>
                 <p class='tile-header'>Player Vs. Computer</p>
@@ -22,28 +23,43 @@
             </div>
         </div>
     </div>
-    <div class='game-board'>
-        <h2 class='turn-indicator'>Player's Turn</h2>
-        <table class='game-grid'>
-            <tr class='first-row'>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class='second-row'>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class='third-row'>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-        <div class='game-button-container'>
-            <button>Main Menu</button>
-            <button>Reset Game</button>
+    <div id='wrapper'>
+        <div class='game-board hide-right'>
+            <h2 class='turn-indicator'>Xs Turn!</h2>
+            <table class='game-grid'>
+                <tr class='first-row'>
+                    <td id='0'></td>
+                    <td id='1'></td>
+                    <td id='2'></td>
+                </tr>
+                <tr class='second-row'>
+                    <td id='3'></td>
+                    <td id='4'></td>
+                    <td id='5'></td>
+                </tr>
+                <tr class='third-row'>
+                    <td id='6'></td>
+                    <td id='7'></td>
+                    <td id='8'></td>
+                </tr>
+            </table>
+            <div class='game-button-container'>
+                <button id='main-menu'>Main Menu</button>
+                <button id='reset-game'>Reset Game</button>
+            </div>
         </div>
     </div>
+    <div class='pop-up'>
+        <form>
+            <label for='player1'>Player 1's Name:</label>
+            <input type='text' name='player1' id='player1' required>
+            <label for='player2'>Player 2's Name:</label>
+            <input type='text' name='player2' id='player2' required>
+            <div class='modal-buttons'>
+                <button id='submit' type="submit">Start Game!</button>
+                <button id='cancel' type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts/game.js"></script>
 </body>
